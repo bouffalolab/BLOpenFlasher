@@ -1,7 +1,7 @@
 # BLOpenFlasher
 This is open source version for flash_tools, not perfect but open source totally. The current version also require python3 env, and if not please use tools to convert dts to dtb.
 
-# Installing depedencies
+# Installing dependencies
 ```bash
 go get gopkg.in/ini.v1 github.com/pelletier/go-toml github.com/albenik/go-serial
 ```
