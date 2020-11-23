@@ -601,7 +601,7 @@ func (this *Image)CreateImage() bool{
         fmt.Printf("Failed to read file: %v\r\n", err)
         return false
     } else {
-        outBytes := make([]byte, 8192+binlen)
+        outBytes := make([]byte, this.FWOffset+binlen)
         for i:=176; i<this.FWOffset; i++ {
             outBytes[i] = 0xff
         }

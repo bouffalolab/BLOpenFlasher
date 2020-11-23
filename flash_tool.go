@@ -28,7 +28,7 @@ func main(){
         IfBootInfoName:"bl602/efuse_bootheader/efuse_bootheader_cfg.conf",
         IfBinName:"bl602/bl602.bin",
         OfImageName:"bl602/image/fwimage.bin",
-        FWOffset:0x800,
+        FWOffset:0x1000,
     }
     genFWImage.CreateImage()
     
@@ -43,7 +43,7 @@ func main(){
         "bl602/image/boot2image.bin@0x000000",
         "bl602/image/partition.bin@0xE000",
         "bl602/image/partition.bin@0xF000",
-        "bl602/image/whole_img.bin@0x10000",
+        "bl602/image/fwimage.bin@0x10000",
         "bl602/image/ro_params.dtb@0x1F8000",
     }
     utils.StartProgram("/dev/ttyUSB0", nil, 512000, "bl602/eflash_loader/eflash_loader_40m.bin", 2000000, bins, 5000)
