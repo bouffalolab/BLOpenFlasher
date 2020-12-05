@@ -8,3 +8,9 @@ go get gopkg.in/ini.v1 github.com/pelletier/go-toml github.com/albenik/go-serial
 
 # Usage
 Switch BL602 to program mode by pulling-up GPIO8 during booting, connect via the uart(which is hardcode now), and then run "go run flash_tool.go". Bin files are generated and then bl602 will be programmed. 
+
+# Other version
+Initially Golang version is only for mass production program with linux. Now, there are other better options for cross platform requirement. Thanks for these contributors.  
+Python version https://github.com/stschake/bl60x-flash  
+Rust version https://github.com/spacemeowx2/blflash  
+
