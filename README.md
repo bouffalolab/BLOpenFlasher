@@ -11,6 +11,10 @@ Switch BL602 to program mode by pulling-up GPIO8 during booting, connect via the
 
 # Other version
 Initially Golang version is only for mass production program with linux. Now, there are other better options for cross platform requirement. Thanks for these contributors.  
-Python version https://github.com/stschake/bl60x-flash  
-Rust version https://github.com/spacemeowx2/blflash  
+Python version:  
+https://github.com/stschake/bl60x-flash  
+https://github.com/renzenicolai/bl602tool     
+Rust version:  
+https://github.com/spacemeowx2/blflash  
+https://github.com/mkroman/bouffalo-cli   
 
